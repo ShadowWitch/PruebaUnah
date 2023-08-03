@@ -25,7 +25,7 @@ export class CashRegisterRouter implements Route {
 
 	private initializeRoutes() {
 		this.router.get(
-			this.path,
+			this.path + "/list",
 			isAuthenticated,
 			this.cashRegisterController.getSeveral.bind(
 				this.cashRegisterController
